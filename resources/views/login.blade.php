@@ -117,7 +117,7 @@
 				<h3>Log In</h3>
 			</div>
 			<div class="card-body">
-				<form action="loginProcess.php" method="POST">
+				<form action="{{route('login')}}" method="POST">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-id-card"></i></span>

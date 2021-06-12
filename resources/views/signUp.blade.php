@@ -115,7 +115,8 @@
 				
 			</div>
 			<div class="card-body">
-				<form action="signUpProcess.php" method="POST">
+				<form action="{{route('register')}}" method="POST">
+                    @csrf
                     <div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -150,7 +151,7 @@
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center links">
-					Sudah punya akun?<a style="color:#ffc312;" href="{{route('login')}}">Masuk</a>
+					Sudah punya akun?<a style="color:#ffc312;" href="{{route('log-in')}}">Masuk</a>
 				</div>
 			</div>
 		</div>
